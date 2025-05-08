@@ -1,4 +1,4 @@
-# Shakib's Data Science Portfolio
+# Shakib Mahamud's Data Science Portfolio
 
 This is a modern, dark-themed portfolio website template for a data scientist.
 
@@ -30,4 +30,4 @@ This is a modern, dark-themed portfolio website template for a data scientist.
 
 ---
 
-© 2025 Shakib. All rights reserved.
+© 2025 Shakib Mahamud. All rights reserved.
