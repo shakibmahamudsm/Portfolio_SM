@@ -1,0 +1,270 @@
+/* Dark Theme Portfolio Styles */
+:root {
+    --bg: #181a20;
+    --surface: #23262f;
+    --accent: #00bfae;
+    --text: #f1f1f1;
+    --subtext: #b0b3b8;
+    --card: #22242c;
+    --border: #333;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: var(--surface);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem 2rem 1rem;
+    background: var(--surface);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--subtext);
+    font-size: 1.2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+    filter: invert(70%);
+    transition: filter 0.2s;
+}
+
+.social-links a:hover img {
+    filter: invert(50%) sepia(1) saturate(5) hue-rotate(120deg);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: var(--card);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+.button {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #009e8e;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.timeline li {
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline .date {
+    color: var(--subtext);
+    font-size: 0.95rem;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.timeline .desc {
+    font-size: 1rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    min-width: 220px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.project-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.98rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    background: var(--surface);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.blog-post {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.blog-post .date {
+    color: var(--subtext);
+    font-size: 0.95rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#contact-form button:hover {
+    background: #009e8e;
+}
+
+#form-message {
+    margin-top: 1rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--subtext);
+    background: var(--surface);
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0;
+    }
+    .project-list {
+        flex-direction: column;
+    }
+    section {
+        padding: 1.2rem 0.7rem;
+    }
+}
