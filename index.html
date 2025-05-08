@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shakib Mahamud - Data Scientist Portfolio showcasing machine learning projects, data analysis, and technical expertise">
+    <meta name="keywords" content="Data Science, Machine Learning, Python, Data Analysis, Portfolio">
+    <meta name="author" content="Shakib Mahamud">
+    <meta property="og:title" content="Shakib Mahamud | Data Scientist">
+    <meta property="og:description" content="Data Scientist Portfolio showcasing machine learning projects and technical expertise">
+    <meta property="og:type" content="website">
     <title>Shakib Mahamud | Data Scientist</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo">Shakib Mahamud</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </nav>
     <header>
         <h1>Shakib Mahamud</h1>
@@ -56,21 +77,66 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="viz">Data Visualization</button>
+            </div>
             <div class="project-list">
-                <div class="project-card">
-                    <h3>Customer Churn Prediction</h3>
-                    <p>Built a machine learning model to predict customer churn for a telecom company, improving retention by 15%.</p>
-                    <a href="#">GitHub Repo</a>
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="path/to/churn-prediction.jpg" alt="Customer Churn Prediction" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Built a machine learning model to predict customer churn for a telecom company, improving retention by 15%.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>XGBoost</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="button"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Real-Time Sentiment Analysis</h3>
-                    <p>Developed a dashboard for real-time sentiment analysis of social media data using NLP techniques.</p>
-                    <a href="#">GitHub Repo</a>
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image">
+                        <img src="path/to/sentiment-analysis.jpg" alt="Real-Time Sentiment Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time Sentiment Analysis</h3>
+                        <p>Developed a dashboard for real-time sentiment analysis of social media data using NLP techniques.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="button"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Sales Forecasting</h3>
-                    <p>Created a time series forecasting model to predict sales, enabling better inventory management for retailers.</p>
-                    <a href="#">GitHub Repo</a>
+                <div class="project-card" data-category="viz">
+                    <div class="project-image">
+                        <img src="path/to/sales-forecasting.jpg" alt="Sales Forecasting" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sales Forecasting</h3>
+                        <p>Created a time series forecasting model to predict sales, enabling better inventory management for retailers.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Prophet</span>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="button"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
