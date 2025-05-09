@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Post - Shakib Mahamud's Data Science Blog">
+    <title>Blog Post | Shakib Mahamud</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Shakib Mahamud</div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="blog-detail">
+        <article class="blog-content">
+            <header class="blog-header">
+                <div class="blog-meta">
+                    <span class="date" id="blog-date"></span>
+                    <div class="tags" id="blog-tags"></div>
+                </div>
+                <h1 id="blog-title"></h1>
+            </header>
+            
+            <div class="blog-body" id="blog-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+
+            <div class="blog-footer">
+                <div class="author-info">
+                    <img src="path/to/profile.jpg" alt="Shakib Mahamud" class="author-image">
+                    <div class="author-details">
+                        <h3>Shakib Mahamud</h3>
+                        <p>Data Scientist | Machine Learning Enthusiast</p>
+                    </div>
+                </div>
+                
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="shareOnTwitter()">
+                        <i class="fab fa-twitter"></i> Share
+                    </button>
+                    <button class="share-btn" onclick="shareOnLinkedIn()">
+                        <i class="fab fa-linkedin"></i> Share
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <aside class="blog-sidebar">
+            <div class="related-posts">
+                <h3>Related Posts</h3>
+                <div id="related-posts-list">
+                    <!-- Related posts will be loaded dynamically -->
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        &copy; 2025 Shakib Mahamud. All rights reserved.
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html> 

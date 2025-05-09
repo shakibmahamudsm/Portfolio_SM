@@ -1,0 +1,256 @@
+/* Blog Detail Page Styles */
+.blog-detail {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+.blog-content {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.blog-header {
+    margin-bottom: 2rem;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.blog-meta .date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.blog-meta .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.blog-meta .tag {
+    background: var(--bg-secondary);
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+}
+
+.blog-content h1 {
+    color: var(--section-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.blog-body {
+    color: var(--text-primary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.blog-body p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-body h2 {
+    color: var(--section-title);
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+}
+
+.blog-body h3 {
+    color: var(--section-title);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.blog-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.blog-body code {
+    background: var(--bg-secondary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.blog-body pre {
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.blog-body blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+}
+
+.blog-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details h3 {
+    color: var(--section-title);
+    margin-bottom: 0.25rem;
+}
+
+.author-details p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* Sidebar Styles */
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.related-posts {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.related-posts h3 {
+    color: var(--section-title);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.related-posts h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.related-post {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.related-post:last-child {
+    border-bottom: none;
+}
+
+.related-post h4 {
+    color: var(--section-title);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.related-post h4 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.related-post h4 a:hover {
+    color: var(--accent-color);
+}
+
+.related-post .date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .blog-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-content {
+        padding: 1.5rem;
+    }
+    
+    .blog-content h1 {
+        font-size: 2rem;
+    }
+    
+    .blog-body {
+        font-size: 1rem;
+    }
+    
+    .share-buttons {
+        flex-wrap: wrap;
+    }
+} 
